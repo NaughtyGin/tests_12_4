@@ -1,0 +1,18 @@
+2024-12-08 11:35:45,036 | INFO | Тест "test_run" выполнен успешно
+2024-12-08 11:35:45,036 | WARNING | Неверный тип данных для объекта Runner
+Traceback (most recent call last):
+  File "C:\Users\as519\Desktop\00000 UrbanProjects\module_12_Tests\tests_12_4.py", line 32, in test_run
+    test_obj = rt_with_exceptions.Runner(['Someone'], 8)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\as519\Desktop\00000 UrbanProjects\module_12_Tests\rt_with_exceptions.py", line 6, in __init__
+    raise TypeError(f'Имя может быть только строкой, передано {type(name).__name__}')
+TypeError: Имя может быть только строкой, передано list
+2024-12-08 11:35:45,037 | INFO | Тест "test_walk" выполнен успешно
+2024-12-08 11:35:45,037 | WARNING | Неверная скорость для Runner
+Traceback (most recent call last):
+  File "C:\Users\as519\Desktop\00000 UrbanProjects\module_12_Tests\tests_12_4.py", line 21, in test_walk
+    test_obj = rt_with_exceptions.Runner('Nick', -5)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\as519\Desktop\00000 UrbanProjects\module_12_Tests\rt_with_exceptions.py", line 11, in __init__
+    raise ValueError(f'Скорость не может быть отрицательной, сейчас {speed}')
+ValueError: Скорость не может быть отрицательной, сейчас -5
